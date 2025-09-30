@@ -88,6 +88,11 @@ class SentryFlutter {
     data.getIfNotNull<String>("proguardUuid") {
       options.proguardUuid = it
     }
+    data.getIfNotNull<List<String>>("bundleIds") {
+      it.forEach { bundleId ->
+        options.addBundleId(bundleId)
+      }
+    }
     data.getIfNotNull<Boolean>("enableSpotlight") {
       options.isEnableSpotlight = it
     }

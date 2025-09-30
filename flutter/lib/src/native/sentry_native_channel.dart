@@ -59,6 +59,7 @@ class SentryNativeChannel
       'enableAutoPerformanceTracing': options.enableAutoPerformanceTracing,
       'sendClientReports': options.sendClientReports,
       'proguardUuid': options.proguardUuid,
+      'bundleIds': options.bundleIds,
       'maxAttachmentSize': options.maxAttachmentSize,
       'recordHttpBreadcrumbs': options.recordHttpBreadcrumbs,
       'captureFailedRequests': options.captureFailedRequests,
